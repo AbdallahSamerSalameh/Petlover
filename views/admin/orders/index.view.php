@@ -28,10 +28,13 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
+                <?php $count=0;
+                    $count++;
+                     ?>
                 <tbody>
                     <?php foreach ($orders as $order): ?>
                         <tr>
-                            <td><?= htmlspecialchars($order['order_id']) ?></td>
+                            <td><?= htmlspecialchars($count++) ?></td>
                             <td><?= htmlspecialchars($order['user_id']) ?></td>
                             <td><?= htmlspecialchars($order['order_date']) ?></td>
                             <td><?= htmlspecialchars($order['total']) ?></td>

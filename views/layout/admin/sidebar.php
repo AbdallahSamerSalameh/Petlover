@@ -42,6 +42,7 @@
         <div class="sidebar">
             <div class="sidebar-header">
             <form action="/logout" method="post">
+            <!-- <a href="/profile" class="text-white mx-1"><i class="fa-regular fa-user fs-5"></i></a> -->
             <button type="submit" class="btn bg-orange;" >
             <i class="fa-solid fa-arrow-right-from-bracket fs-5 whiteicon"></i>
             </button>

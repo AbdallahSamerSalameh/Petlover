@@ -14,7 +14,7 @@
 <body>
 
 <div class="container mt-5">
-    <h1 class="text-center mb-4">All Admins</h1>
+    <h1 class="text-center mb-4">Webite Admin</h1>
 
     <!-- Display admins in a table -->
     <?php if (!empty($admins)): ?>
@@ -25,29 +25,34 @@
                         <th>ID</th>
                         <th>Username</th>
                         <th>Email</th>
-                        <th>Actions</th>
+                        <!-- <th>Actions</th> -->
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $count=0;
+                    $count++;
+                     ?>
+
+
                     <?php foreach ($admins as $admin): ?>
                         <tr>
-                            <td><?= htmlspecialchars($admin['id']) ?></td>
+                            <td><?= htmlspecialchars($count) ?></td>
                             <td><?= htmlspecialchars($admin['username']) ?></td>
                             <td><?= htmlspecialchars($admin['email']) ?></td>
-                            <td>
+                            <!-- <td> -->
                                 <!-- Edit link (GET) -->
                                 <!-- <a href="/admins/<?= $admin['id'] ?>/edit" class="btn btn-sm btn-warning me-2">
                                     <i class="bi bi-pencil"></i> Edit
                                 </a> -->
 
                                 <!-- Delete form (simulating DELETE via _method) -->
-                                <form action="/admins/<?= $admin['id'] ?>" method="POST" class="d-inline">
+                                <!-- <form action="/admins/<?= $admin['id'] ?>" method="POST" class="d-inline">
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">
                                         <i class="bi bi-trash"></i> Delete
                                     </button>
-                                </form>
-                            </td>
+                                </form> -->
+                            <!-- </td> -->
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

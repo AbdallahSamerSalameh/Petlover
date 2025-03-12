@@ -54,9 +54,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                    $count = 0;
+                    $count++;
+                     ?>
                     <?php foreach ($products as $product): ?>
                         <tr>
-                            <td><?= htmlspecialchars($product['id']) ?></td>
+                            <td><?= htmlspecialchars($count++) ?></td>
                             <td><?= htmlspecialchars($product['category_id']) ?></td>
                             <td><?= htmlspecialchars($product['product_name']) ?></td>
                             <td><?= htmlspecialchars($product['description']) ?></td>

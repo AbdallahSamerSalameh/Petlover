@@ -379,10 +379,10 @@
                     <p><?= htmlspecialchars($user['email']) ?></p>
                 </div>
                 
-                <div class="info-card">
+                <!-- <div class="info-card">
                     <h3>Account Role</h3>
                     <p><?= htmlspecialchars($user['role']) ?></p>
-                </div>
+                </div> -->
                 
                 <div class="info-card">
                     <h3>Member Since</h3>
